@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "57335844246",
+    "firebase_url": "https://modbus-ats-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "modbus-ats",
+    "storage_bucket": "modbus-ats.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:57335844246:android:b7b2a2e3f265fd32f021b7",
+        "android_client_info": {
+          "package_name": "com.wahid.modbus"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "57335844246-nvqhbqi8o1cm3jhui70lq80laf3p9jfj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAvuzGtwFtY83eVsBC1TjRVY6dA-6R78dw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "57335844246-nvqhbqi8o1cm3jhui70lq80laf3p9jfj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
