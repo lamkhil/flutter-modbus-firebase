@@ -141,9 +141,16 @@ class _ChartPLNState extends State<ChartPLN> {
       fontSize: 15,
     );
 
-    var a = List.generate(501, (index) => min.toInt() + index);
+    var a =
+        List.generate(max > 500 ? 1000 : 501, (index) => min.toInt() + index);
     for (var element in a) {
-      if (element.toInt() % (max > 100 ? 25 : 5) == 0) {
+      if (element.toInt() %
+              (max > 100
+                  ? max > 500
+                      ? 100
+                      : 25
+                  : 5) ==
+          0) {
         if (value.toInt() == element) {
           return Text(element.toInt().toString(),
               style: style, textAlign: TextAlign.left);
@@ -378,14 +385,15 @@ class _ChartPLTSState extends State<ChartPLTS> {
       fontSize: 15,
     );
 
-    var a = List.generate(501, (index) => min.toInt() + index);
+    var a =
+        List.generate(max > 500 ? 1000 : 501, (index) => min.toInt() + index);
     for (var element in a) {
       if (element.toInt() %
               (max > 100
-                  ? 25
-                  : max > 50
-                      ? 5
-                      : 3) ==
+                  ? max > 500
+                      ? 100
+                      : 25
+                  : 5) ==
           0) {
         if (value.toInt() == element) {
           return Text(element.toInt().toString(),

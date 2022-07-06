@@ -14,7 +14,7 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Save Energy"),
+        title: const Text("I-CON Studio"),
         centerTitle: true,
         elevation: 0,
       ),

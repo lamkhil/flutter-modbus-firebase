@@ -65,6 +65,53 @@ class _AtsState extends State<Ats> {
                         ),
                       ),
                       SizedBox(
+                        height: 12,
+                      ),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Container(
+                            padding: EdgeInsets.all(8),
+                            margin: EdgeInsets.symmetric(horizontal: 4),
+                            decoration: BoxDecoration(
+                                shape: BoxShape.circle,
+                                color: (snapshot.data!.snapshot.value
+                                            as Map)['register']['state']
+                                        .toString()
+                                        .contains('pln')
+                                    ? Colors.amber
+                                    : Colors.amber.shade50),
+                          ),
+                          Container(
+                            padding: EdgeInsets.all(8),
+                            margin: EdgeInsets.symmetric(horizontal: 4),
+                            decoration: BoxDecoration(
+                                shape: BoxShape.circle,
+                                color: (snapshot.data!.snapshot.value
+                                            as Map)['register']['state']
+                                        .toString()
+                                        .contains('off')
+                                    ? Colors.red
+                                    : Colors.red.shade50),
+                          ),
+                          Container(
+                            padding: EdgeInsets.all(8),
+                            margin: EdgeInsets.symmetric(horizontal: 4),
+                            decoration: BoxDecoration(
+                                shape: BoxShape.circle,
+                                color: (snapshot.data!.snapshot.value
+                                            as Map)['register']['state']
+                                        .toString()
+                                        .contains('plts')
+                                    ? Colors.green
+                                    : Colors.green.shade50),
+                          )
+                        ],
+                      ),
+                      SizedBox(
+                        height: 12,
+                      ),
+                      SizedBox(
                         height: 150,
                         child: Row(
                           children: [
